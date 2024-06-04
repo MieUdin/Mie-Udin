@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+    color: #2f2f2f;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+header img{
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    background: linear-gradient(90deg,#ff9442,rgb(255, 0, 140));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+.judul {
+    margin-top: 2rem;
+}
+.deskripsi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+.isi {
+    width: 20rem;
+    margin-top: 2rem;
+    box-shadow: 0px 0px 10px 2px grey;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.isi img {
+    width: 10rem;
+    border-radius: 1rem;
+}
+.spek {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+.spek a{
+    margin-top: 1rem;
+    padding: 0.2rem 2rem 0.2rem 2rem;
+    border-radius: 1.5rem;
+    background-color: #2f2f2f;
+    color: white;
+    transition: font-size 0.5s ease;
+}
+.spek a:hover {
+    margin-top: 1rem;
+    padding: 0.2rem 2rem 0.2rem 2rem;
+    border-radius: 1.5rem;
+    background: linear-gradient(90deg,#ff9442,rgb(255, 0, 140));
+    color: white;
+    font-size: 115%;
+    transition: font-size 0.5s ease;
+}
+.tombols {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .deskripsi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .tombols {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
